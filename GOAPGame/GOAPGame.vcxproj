@@ -122,6 +122,8 @@
     <ClCompile Include="CookFruit.cpp" />
     <ClCompile Include="CookMeat.cpp" />
     <ClCompile Include="Eat.cpp" />
+    <ClCompile Include="EatFruit.cpp" />
+    <ClCompile Include="EatMeat.cpp" />
     <ClCompile Include="Forge.cpp" />
     <ClCompile Include="GetWeapon.cpp" />
     <ClCompile Include="Hunt.cpp" />
@@ -138,6 +140,8 @@
     <ClInclude Include="CookFruit.h" />
     <ClInclude Include="CookMeat.h" />
     <ClInclude Include="Eat.h" />
+    <ClInclude Include="EatFruit.h" />
+    <ClInclude Include="EatMeat.h" />
     <ClInclude Include="Forge.h" />
     <ClInclude Include="GetWeapon.h" />
     <ClInclude Include="Hunt.h" />

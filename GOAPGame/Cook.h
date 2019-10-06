@@ -5,6 +5,8 @@
 #include "CookMeat.h"
 #include "CookFruit.h"
 #include "Eat.h"
+#include "EatFruit.h"
+#include "EatMeat.h"
 
 class Cook : public Actor
 {
@@ -15,6 +17,8 @@ public:
 	void SelectionAction(World& w) override;
 
 	Eat  eatAction;
+	EatFruit eatFruitAction;
+	EatMeat eatMeatAction;
 	CookMeat cookMeatAction;
 	CookFruit cookFruitAction;
 };

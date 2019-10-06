@@ -27,11 +27,19 @@ int main(int argc, char* argv[])
 	
 	while (turn < 20)
 	{
+		std::cout << "Turn " << turn << std::endl;
+
+		std::cout << "\n";
+
 		DisplayWorldData(w);
+
+		std::cout << "\n";
 
 		std::cout << "Hunter health " << h.energy << std::endl;
 		std::cout << "Blacksmith health " << b.energy << std::endl;
 		std::cout << "Cook health " << c.energy << std::endl;
+
+		std::cout << "\n";
 
 		h.DoAction(w);
 		b.DoAction(w);

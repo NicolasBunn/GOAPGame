@@ -3,6 +3,8 @@
 #include "Actor.h"
 #include "Forge.h"
 #include "Eat.h"
+#include "EatFruit.h"
+#include "EatMeat.h"
 
 class Blacksmith : public Actor
 {
@@ -13,5 +15,7 @@ class Blacksmith : public Actor
 		void SelectionAction(World& w) override;
 
 		Eat eatAction;
+		EatFruit eatFruitAction;
+		EatMeat eatMeatAction;
 		Forge forgeAction;
 };

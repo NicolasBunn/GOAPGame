@@ -27,21 +27,35 @@ void Cook::SelectionAction(World& w)
 {
 	if (eatAction.CheckCondition(this, w))
 	{
-		std::cout << "Set current action eat ! " << std::endl;
-		currentAction = new Eat(eatAction);
+		std::cout << "Cook is hungry ! " << std::endl;
+		currentActionIndice = -1;
+		if (eatMeatAction.CheckCondition(this, w))
+		{
+			std::cout << "Cook is going to eat meat ! " << std::endl;
+			currentAction = new EatMeat(eatMeatAction);
+			return;
+		}
+		if (eatFruitAction.CheckCondition(this, w))
+		{
+			std::cout << "Cook is going to eat fruit ! " << std::endl;
+			currentAction = new EatFruit();
+			return;
+		}
+
+		std::cout << "Cook does nothing because their is nothing to eat !" << std::endl;
 		return;
 	}
 
 	if (cookMeatAction.CheckCondition(this, w))
 	{
-		std::cout << "Set current cook meat ! " << std::endl;
+		std::cout << "Cook set  current cook meat ! " << std::endl;
 		currentAction = new CookMeat(cookMeatAction);
 		return;
 	}
 
 	if (cookFruitAction.CheckCondition(this, w))
 	{
-		std::cout << "Set current cook fruit ! " << std::endl;
+		std::cout << "Cook set  current cook fruit ! " << std::endl;
 		currentAction = new CookFruit(cookFruitAction);
 		return;
 	}

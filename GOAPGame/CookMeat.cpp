@@ -21,7 +21,7 @@ bool CookMeat::CheckCondition(Actor* a, World& w)
 void CookMeat::SetEffect(Actor* a, World& w)
 {
 	w.meat -= 1;
-	w.meatReady += 1;
+	w.meatReady += 3;
 }
 
 bool CookMeat::ExecuteAction(float timer)

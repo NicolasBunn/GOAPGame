@@ -3,9 +3,10 @@
 #include <vector>
 
 #include "Actor.h"
-#include "Hunt.h"
 #include "PickFruit.h"
 #include "Eat.h"
+#include "EatFruit.h"
+#include "EatMeat.h"
 
 class Hunter : public Actor
 {
@@ -16,7 +17,8 @@ public:
 	void SelectionAction(World& w) override;
 
 	Eat  eatAction;
-	Hunt huntAction;
+	EatFruit eatFruitAction;
+	EatMeat eatMeatAction;
 	PickFruit pickFruitAction;
 
 	std::vector<Action*> hunteraActionList;

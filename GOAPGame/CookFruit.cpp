@@ -21,7 +21,7 @@ bool CookFruit::CheckCondition(Actor* a, World& w)
 void CookFruit::SetEffect(Actor* a, World& w)
 {
 	w.fruit -= 1;
-	w.fruitReady += 1;
+	w.fruitReady += 3;
 }
 
 bool CookFruit::ExecuteAction(float timer)
